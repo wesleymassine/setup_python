@@ -1,0 +1,2 @@
+# Dependências de produção
+# Exemplo: requests==2.31.0

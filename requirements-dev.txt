@@ -1,0 +1,15 @@
+# Dependências de desenvolvimento
+-r requirements.txt
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Linting e Formatação
+black==23.12.0
+flake8==6.1.0
+pylint==3.0.3
+mypy==1.7.1
+
+# Pre-commit hooks
+pre-commit==3.6.0
