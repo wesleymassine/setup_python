@@ -1,6 +1,6 @@
 # Setup Python - Professional Development Project
 
-Professional Python development training project with best practices.
+Professional Python development setup project with best practices.
 
 ## 🚀 Environment Setup
 
