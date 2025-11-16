@@ -9,7 +9,7 @@
 
 ### 2. **Project Structure**
 ```
-unit_tests/
+setup_python/
 ├── .venv/                     # Virtual environment (isolated)
 ├── .vscode/                   # VS Code settings
 │   ├── settings.json          # Editor configuration
@@ -52,7 +52,7 @@ unit_tests/
 ### Starting Your Work Session
 ```bash
 # Navigate to project
-cd /Users/skopotech/projects/python-traning/unit_tests
+cd /Users/skopotech/projects/python-traning/setup_python
 
 # Activate virtual environment
 source .venv/bin/activate
@@ -267,7 +267,7 @@ Test: add or update tests
 ### Virtual Environment Not Activating
 ```bash
 # Ensure you're in project directory
-cd /Users/skopotech/projects/python-traning/unit_tests
+cd /Users/skopotech/projects/python-traning/setup_python
 
 # Activate explicitly
 source .venv/bin/activate
@@ -288,7 +288,7 @@ pre-commit autoupdate
 which python  # Should show .venv path
 
 # Run from project root
-cd /Users/skopotech/projects/python-traning/unit_tests
+cd /Users/skopotech/projects/python-traning/setup_python
 pytest
 ```
 

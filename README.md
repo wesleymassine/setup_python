@@ -1,6 +1,6 @@
-# Unit Tests - Python Project
+# Setup Python - Professional Development Project
 
-Professional Python development training project.
+Professional Python development training project with best practices.
 
 ## 🚀 Environment Setup
 
@@ -13,7 +13,7 @@ Professional Python development training project.
 1. **Clone the repository** (if applicable)
 ```bash
 git clone <your-repository>
-cd unit_tests
+cd setup_python
 ```
 
 2. **Create virtual environment**
@@ -43,7 +43,7 @@ pre-commit install
 ## 🏗️ Project Structure
 
 ```
-unit_tests/
+setup_python/
 ├── .venv/                  # Virtual environment (not committed)
 ├── src/                    # Source code
 │   └── __init__.py
