@@ -1,16 +1,16 @@
-"""Exemplo de módulo com funções para demonstrar testes."""
+"""Example module with functions to demonstrate testing."""
 
 
 def soma(a: int, b: int) -> int:
     """
-    Retorna a soma de dois números.
+    Return the sum of two numbers.
 
     Args:
-        a: Primeiro número
-        b: Segundo número
+        a: First number
+        b: Second number
 
     Returns:
-        A soma de a e b
+        The sum of a and b
 
     Examples:
         >>> soma(2, 3)
@@ -21,26 +21,26 @@ def soma(a: int, b: int) -> int:
 
 def multiplicacao(a: int, b: int) -> int:
     """
-    Retorna a multiplicação de dois números.
+    Return the multiplication of two numbers.
 
     Args:
-        a: Primeiro número
-        b: Segundo número
+        a: First number
+        b: Second number
 
     Returns:
-        O produto de a e b
+        The product of a and b
     """
     return a * b
 
 
 def saudacao(nome: str) -> str:
     """
-    Retorna uma saudação personalizada.
+    Return a personalized greeting.
 
     Args:
-        nome: Nome da pessoa
+        nome: Person's name
 
     Returns:
-        Mensagem de saudação
+        Greeting message
     """
     return f"Olá, {nome}!"

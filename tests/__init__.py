@@ -1,1 +1,1 @@
-"""Pacote de testes unitários."""
+"""Unit tests package."""

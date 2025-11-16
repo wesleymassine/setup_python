@@ -1,4 +1,4 @@
-"""Testes para o módulo calculadora."""
+"""Tests for the calculadora module."""
 
 import pytest
 
@@ -6,26 +6,26 @@ from src.calculadora import multiplicacao, saudacao, soma
 
 
 class TestCalculadora:
-    """Testes para funções de cálculo."""
+    """Tests for calculation functions."""
 
     def test_soma_positivos(self):
-        """Testa soma de números positivos."""
+        """Test sum of positive numbers."""
         assert soma(2, 3) == 5
         assert soma(10, 20) == 30
 
     def test_soma_negativos(self):
-        """Testa soma de números negativos."""
+        """Test sum of negative numbers."""
         assert soma(-5, -3) == -8
         assert soma(-10, 5) == -5
 
     def test_multiplicacao(self):
-        """Testa multiplicação."""
+        """Test multiplication."""
         assert multiplicacao(2, 3) == 6
         assert multiplicacao(5, 0) == 0
         assert multiplicacao(-2, 3) == -6
 
     @pytest.mark.parametrize(
-        "a,b,esperado",
+        "a,b,expected",
         [
             (1, 1, 2),
             (0, 0, 0),
@@ -33,19 +33,19 @@ class TestCalculadora:
             (-5, 5, 0),
         ],
     )
-    def test_soma_parametrizada(self, a, b, esperado):
-        """Testa soma com múltiplos casos."""
-        assert soma(a, b) == esperado
+    def test_soma_parametrizada(self, a, b, expected):
+        """Test sum with multiple cases."""
+        assert soma(a, b) == expected
 
 
 class TestSaudacao:
-    """Testes para função de saudação."""
+    """Tests for greeting function."""
 
     def test_saudacao_basica(self):
-        """Testa saudação básica."""
+        """Test basic greeting."""
         assert saudacao("João") == "Olá, João!"
         assert saudacao("Maria") == "Olá, Maria!"
 
     def test_saudacao_vazia(self):
-        """Testa saudação com string vazia."""
+        """Test greeting with empty string."""
         assert saudacao("") == "Olá, !"

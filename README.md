@@ -1,110 +1,110 @@
-# Unit Tests - Projeto Python
+# Unit Tests - Python Project
 
-Projeto de treinamento para desenvolvimento profissional em Python.
+Professional Python development training project.
 
-## 🚀 Setup do Ambiente
+## 🚀 Environment Setup
 
-### Pré-requisitos
+### Prerequisites
 - Python 3.8+
-- pyenv (recomendado)
+- pyenv (recommended)
 
-### Instalação
+### Installation
 
-1. **Clone o repositório** (se aplicável)
+1. **Clone the repository** (if applicable)
 ```bash
-git clone <seu-repositorio>
+git clone <your-repository>
 cd unit_tests
 ```
 
-2. **Crie o ambiente virtual**
+2. **Create virtual environment**
 ```bash
 python3 -m venv .venv
 ```
 
-3. **Ative o ambiente virtual**
+3. **Activate virtual environment**
 ```bash
 source .venv/bin/activate
 ```
 
-4. **Instale as dependências**
+4. **Install dependencies**
 ```bash
-# Dependências de produção
+# Production dependencies
 pip install -r requirements.txt
 
-# Dependências de desenvolvimento
+# Development dependencies
 pip install -r requirements-dev.txt
 ```
 
-5. **Configure o pre-commit**
+5. **Setup pre-commit hooks**
 ```bash
 pre-commit install
 ```
 
-## 🏗️ Estrutura do Projeto
+## 🏗️ Project Structure
 
 ```
 unit_tests/
-├── .venv/                  # Ambiente virtual (não commitado)
-├── src/                    # Código fonte
+├── .venv/                  # Virtual environment (not committed)
+├── src/                    # Source code
 │   └── __init__.py
-├── tests/                  # Testes unitários
+├── tests/                  # Unit tests
 │   └── __init__.py
-├── run.py                  # Script principal
-├── requirements.txt        # Dependências de produção
-├── requirements-dev.txt    # Dependências de desenvolvimento
-├── pyproject.toml         # Configuração do projeto
-├── .flake8                # Configuração do Flake8
-├── .pre-commit-config.yaml # Hooks do pre-commit
-├── .gitignore             # Arquivos ignorados pelo Git
-└── README.md              # Este arquivo
+├── run.py                  # Main script
+├── requirements.txt        # Production dependencies
+├── requirements-dev.txt    # Development dependencies
+├── pyproject.toml         # Project configuration
+├── .flake8                # Flake8 configuration
+├── .pre-commit-config.yaml # Pre-commit hooks
+├── .gitignore             # Git ignored files
+└── README.md              # This file
 ```
 
-## 🧪 Testes
+## 🧪 Testing
 
-Execute os testes com:
+Run tests with:
 ```bash
 pytest
 ```
 
-Com cobertura de código:
+With code coverage:
 ```bash
 pytest --cov=src --cov-report=html
 ```
 
-## 🎨 Formatação e Linting
+## 🎨 Formatting and Linting
 
-**Formatar código automaticamente:**
+**Auto-format code:**
 ```bash
 black .
 ```
 
-**Verificar problemas de estilo:**
+**Check style issues:**
 ```bash
 flake8 src tests
 ```
 
-**Análise estática com pylint:**
+**Static analysis with pylint:**
 ```bash
 pylint src
 ```
 
-**Type checking com mypy:**
+**Type checking with mypy:**
 ```bash
 mypy src
 ```
 
-## 🔧 Boas Práticas
+## 🔧 Best Practices
 
-1. **Sempre ative o ambiente virtual** antes de trabalhar
-2. **Execute os testes** antes de commitar
-3. **Use pre-commit hooks** para garantir qualidade do código
-4. **Documente suas funções** com docstrings
-5. **Mantenha requirements.txt atualizado**
+1. **Always activate virtual environment** before working
+2. **Run tests** before committing
+3. **Use pre-commit hooks** to ensure code quality
+4. **Document your functions** with docstrings
+5. **Keep requirements.txt updated**
 
-## 📝 Desenvolvimento
+## 📝 Development
 
-Para adicionar novas dependências:
+To add new dependencies:
 ```bash
-pip install <pacote>
+pip install <package>
 pip freeze > requirements.txt
 ```
